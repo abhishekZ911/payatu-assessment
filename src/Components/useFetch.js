@@ -1,7 +1,7 @@
 import axios from 'axios'; 
 import { useEffect, useState } from 'react';
 
-
+//use of axios in fetching the data in this component
 const useFetch = (url) => {
 
     let data = [];
@@ -30,23 +30,8 @@ const useFetch = (url) => {
         return data;
         }
 
-        
-        // const filtered = fetchData().then((data) =>{
-        //     console.log(data)
-        //     return ((data) => {
-        //         return data.map((item) => {
-        //             return {
-        //                 id: item.id,
-        //                 name: item.login,
-        //                 image: item.avatar_url
-        //             }
-        //         }
-        //     )})}
-        //         );
-        //         console.log(filtered)
         fetchData();
         
-
     }, [url])
 
 

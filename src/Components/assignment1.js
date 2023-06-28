@@ -1,10 +1,13 @@
 import useFetch from "./useFetch";
-import {Box, Text, Flex, Image, Center, Divider} from "@chakra-ui/react";
+import {Box, Text, Flex, Image, Divider} from "@chakra-ui/react";
 
 const ListOfItems = () => {
 
-    const {datas, isPending} = useFetch('https://api.github.com/users');
 
+    //Fetching from the custom made hook (useFetch)
+    const {datas, isPending} = useFetch('https://api.github.com/users');
+    
+    //Mapping up of the Data Items into JSX for viewing in UI
     const mappedData = datas.map((item) =>{
         return(
         <>
@@ -24,7 +27,10 @@ const ListOfItems = () => {
         <Divider/>
         </>
         )
-    })
+    });
+
+
+
 
     return ( 
         <>
@@ -34,6 +40,7 @@ const ListOfItems = () => {
                 <Text fontSize='2xl'>Loading...</Text>
             </Box>
         )}
+
         {!isPending && 
             <Flex>
                 <Box 
@@ -52,6 +59,7 @@ const ListOfItems = () => {
             </Flex>
 
         }
+
         </Flex>
         </>
      );

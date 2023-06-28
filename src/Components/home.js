@@ -6,59 +6,78 @@ const Home = () => {
     return ( 
         <Flex justify='center' h='100vh' alignItems='center'>
             <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-                <Link to='/1'>
                 <Card>
                 <CardHeader>
                     <Heading size='md'>Assignment Part 1</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text>Creating a React component that renders a list of items from a remote API. 
+
+                    </Text>
                 </CardBody>
+                <Link to='/1'>
+
                 <CardFooter>
-                    <Button>View here</Button>
+                    <Button backgroundColor='#C4B0FF'>View here</Button>
                 </CardFooter>
-                </Card>
                 </Link>
 
+                </Card>
+
+                
                 <Card>
                 <CardHeader>
                     <Heading size='md'>Assignment Part 2</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text>
+                        Creating a React component that allows users to filter a list of items by name, description, or image
+                    </Text>
                 </CardBody>
+                <Link to='/2'> 
+
                 <CardFooter>
-                    <Button>View here</Button>
+                    <Button backgroundColor='#C4B0FF'>View here</Button>
                 </CardFooter>
+                </Link>
+
+
                 </Card>
 
-                <Link to='/3'>
                 <Card>
                 <CardHeader>
                     <Heading size='md'>Assignment Part 3</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text>Creating a React component that allows users to create, edit, and delete items                        
+                    </Text>
                 </CardBody>
+                <Link to='/3'>
+
                 <CardFooter>
-                    <Button>View here</Button>
+                    <Button backgroundColor='#C4B0FF'>View here</Button>
                 </CardFooter>
-                </Card>
                 </Link>
 
-                <Link to='/4'>
+                </Card>
+
                 <Card>
                 <CardHeader>
                     <Heading size='md'>Assignment Part 4</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>View a summary of all your customers over the last month.</Text>
+                    <Text>
+                        Creating a React component that allows users to upvote and downvote items.
+                    </Text>
                 </CardBody>
+                <Link to='/4'>
+
                 <CardFooter>
-                    <Button>View here</Button>
+                    <Button backgroundColor='#C4B0FF'>View here</Button>
                 </CardFooter>
-                </Card>
                 </Link>
+
+                </Card>
             </SimpleGrid>
         </Flex>
      );
