@@ -1,5 +1,5 @@
 
-This project is assessment to my iternship feasilibility assessment at Payatu
+This project is assessment to my internship feasilibility assessment at Payatu
 
 The project is deployed at : https://assessment-abhishekkrkeshri.netlify.app/
 
