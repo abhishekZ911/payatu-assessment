@@ -1,3 +1,9 @@
+
+This project is assessment to my iternship feasilibility assessment at Payatu
+
+The project is deployed at : https://assessment-abhishekkrkeshri.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
